@@ -1,0 +1,119 @@
+[2026-05-25T09:28:50.874+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: payroll_etl_scala_pipeline.run_scala_etl scheduled__2026-05-24T00:00:00+00:00 [queued]>
+[2026-05-25T09:28:50.915+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: payroll_etl_scala_pipeline.run_scala_etl scheduled__2026-05-24T00:00:00+00:00 [queued]>
+[2026-05-25T09:28:50.916+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-05-25T09:28:51.018+0000] {taskinstance.py:2191} INFO - Executing <Task(DockerOperator): run_scala_etl> on 2026-05-24 00:00:00+00:00
+[2026-05-25T09:28:51.049+0000] {standard_task_runner.py:60} INFO - Started process 140 to run task
+[2026-05-25T09:28:51.080+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'payroll_etl_scala_pipeline', 'run_scala_etl', 'scheduled__2026-05-24T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/payroll_etl_dag.py', '--cfg-path', '/tmp/tmpt_zxwlcy']
+[2026-05-25T09:28:51.094+0000] {standard_task_runner.py:88} INFO - Job 2: Subtask run_scala_etl
+[2026-05-25T09:28:52.047+0000] {task_command.py:423} INFO - Running <TaskInstance: payroll_etl_scala_pipeline.run_scala_etl scheduled__2026-05-24T00:00:00+00:00 [running]> on host 2a166f901844
+[2026-05-25T09:28:53.654+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineering_team' AIRFLOW_CTX_DAG_ID='payroll_etl_scala_pipeline' AIRFLOW_CTX_TASK_ID='run_scala_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-05-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-24T00:00:00+00:00'
+[2026-05-25T09:28:54.218+0000] {docker.py:359} INFO - Starting docker container from image payroll-etl
+[2026-05-25T09:28:56.678+0000] {docker.py:429} INFO - ETL Pipeline failed with exception:
+[2026-05-25T09:28:56.683+0000] {docker.py:429} INFO - java.lang.NoClassDefFoundError: org/apache/spark/sql/SparkSession$
+	at com.payroll.main.PayrollETL$.main(PayrollETL.scala:74)
+	at com.payroll.main.PayrollETL.main(PayrollETL.scala)
+Caused by: java.lang.ClassNotFoundException: org.apache.spark.sql.SparkSession$
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	... 2 more
+Caused by:
+java.lang.ClassNotFoundException: org.apache.spark.sql.SparkSession$
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+[2026-05-25T09:28:56.684+0000] {docker.py:429} INFO - at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at com.payroll.main.PayrollETL$.main(PayrollETL.scala:74)
+[2026-05-25T09:28:56.688+0000] {docker.py:429} INFO - at com.payroll.main.PayrollETL.main(PayrollETL.scala)
+Exception in thread "main" java.lang.NoClassDefFoundError: org/apache/spark/sql/SparkSession$
+	at com.payroll.main.PayrollETL$.main(PayrollETL.scala:74)
+	at com.payroll.main.PayrollETL.main(PayrollETL.scala)
+Caused by: java.lang.ClassNotFoundException: org.apache.spark.sql.SparkSession$
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(Unknown Source)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(Unknown Source)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	... 2 more
+[2026-05-25T09:28:57.340+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 502, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 376, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 437, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2026-05-25T09:28:57.370+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=payroll_etl_scala_pipeline, task_id=run_scala_etl, execution_date=20260524T000000, start_date=20260525T092850, end_date=20260525T092857
+[2026-05-25T09:28:57.691+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 2 for task run_scala_etl (Docker container failed: {'StatusCode': 1}; 140)
+[2026-05-25T09:28:57.744+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-05-25T09:28:57.878+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-05-25T12:22:04.242+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: payroll_etl_scala_pipeline.run_scala_etl scheduled__2026-05-24T00:00:00+00:00 [queued]>
+[2026-05-25T12:22:04.394+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: payroll_etl_scala_pipeline.run_scala_etl scheduled__2026-05-24T00:00:00+00:00 [queued]>
+[2026-05-25T12:22:04.396+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-05-25T12:22:04.553+0000] {taskinstance.py:2191} INFO - Executing <Task(DockerOperator): run_scala_etl> on 2026-05-24 00:00:00+00:00
+[2026-05-25T12:22:04.574+0000] {standard_task_runner.py:60} INFO - Started process 196 to run task
+[2026-05-25T12:22:04.595+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'payroll_etl_scala_pipeline', 'run_scala_etl', 'scheduled__2026-05-24T00:00:00+00:00', '--job-id', '28', '--raw', '--subdir', 'DAGS_FOLDER/payroll_etl_dag.py', '--cfg-path', '/tmp/tmpim1r6zql']
+[2026-05-25T12:22:04.624+0000] {standard_task_runner.py:88} INFO - Job 28: Subtask run_scala_etl
+[2026-05-25T12:22:04.930+0000] {task_command.py:423} INFO - Running <TaskInstance: payroll_etl_scala_pipeline.run_scala_etl scheduled__2026-05-24T00:00:00+00:00 [running]> on host b6d873eaa11f
+[2026-05-25T12:22:05.594+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineering_team' AIRFLOW_CTX_DAG_ID='payroll_etl_scala_pipeline' AIRFLOW_CTX_TASK_ID='run_scala_etl' AIRFLOW_CTX_EXECUTION_DATE='2026-05-24T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2026-05-24T00:00:00+00:00'
+[2026-05-25T12:22:06.127+0000] {docker.py:359} INFO - Starting docker container from image payroll-etl
+[2026-05-25T12:22:20.188+0000] {docker.py:429} INFO - ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+[2026-05-25T12:22:21.633+0000] {docker.py:429} INFO - ETL Pipeline failed with exception:
+[2026-05-25T12:22:21.638+0000] {docker.py:429} INFO - java.lang.ClassCastException: class org.apache.logging.log4j.simple.SimpleLogger cannot be cast to class org.apache.logging.log4j.core.Logger (org.apache.logging.log4j.simple.SimpleLogger and org.apache.logging.log4j.core.Logger are in unnamed module of loader 'app')
+	at org.apache.spark.internal.Logging.initializeLogging(Logging.scala:130)
+	at org.apache.spark.internal.Logging.initializeLogIfNecessary(Logging.scala:115)
+	at org.apache.spark.internal.Logging.initializeLogIfNecessary$(Logging.scala:109)
+	at org.apache.spark.SparkContext.initializeLogIfNecessary(SparkContext.scala:84)
+	at org.apache.spark.internal.Logging.initializeLogIfNecessary(Logging.scala:106)
+[2026-05-25T12:22:21.642+0000] {docker.py:429} INFO - at org.apache.spark.internal.Logging.initializeLogIfNecessary$(Logging.scala:105)
+[2026-05-25T12:22:21.645+0000] {docker.py:429} INFO - at org.apache.spark.SparkContext.initializeLogIfNecessary(SparkContext.scala:84)
+	at org.apache.spark.internal.Logging.log(Logging.scala:53)
+[2026-05-25T12:22:21.647+0000] {docker.py:429} INFO - at org.apache.spark.internal.Logging.log$(Logging.scala:51)
+	at org.apache.spark.SparkContext.log(SparkContext.scala:84)
+	at org.apache.spark.internal.Logging.logInfo(Logging.scala:61)
+[2026-05-25T12:22:21.650+0000] {docker.py:429} INFO - at org.apache.spark.internal.Logging.logInfo$(Logging.scala:60)
+[2026-05-25T12:22:21.652+0000] {docker.py:429} INFO - at org.apache.spark.SparkContext.logInfo(SparkContext.scala:84)
+[2026-05-25T12:22:21.654+0000] {docker.py:429} INFO - at org.apache.spark.SparkContext.<init>(SparkContext.scala:195)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2714)
+[2026-05-25T12:22:21.656+0000] {docker.py:429} INFO - at org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$2(SparkSession.scala:953)
+[2026-05-25T12:22:21.657+0000] {docker.py:429} INFO - at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:947)
+	at com.payroll.main.PayrollETL$.main(PayrollETL.scala:76)
+[2026-05-25T12:22:21.662+0000] {docker.py:429} INFO - at com.payroll.main.PayrollETL.main(PayrollETL.scala)
+[2026-05-25T12:22:21.663+0000] {docker.py:429} INFO - Exception in thread "main"
+[2026-05-25T12:22:21.664+0000] {docker.py:429} INFO - java.lang.ClassCastException: class org.apache.logging.log4j.simple.SimpleLogger cannot be cast to class org.apache.logging.log4j.core.Logger (org.apache.logging.log4j.simple.SimpleLogger and org.apache.logging.log4j.core.Logger are in unnamed module of loader 'app')
+[2026-05-25T12:22:21.667+0000] {docker.py:429} INFO - at org.apache.spark.internal.Logging.initializeLogging(Logging.scala:130)
+	at org.apache.spark.internal.Logging.initializeLogIfNecessary(Logging.scala:115)
+[2026-05-25T12:22:21.668+0000] {docker.py:429} INFO - at org.apache.spark.internal.Logging.initializeLogIfNecessary$(Logging.scala:109)
+[2026-05-25T12:22:21.669+0000] {docker.py:429} INFO - at org.apache.spark.SparkContext.initializeLogIfNecessary(SparkContext.scala:84)
+[2026-05-25T12:22:21.672+0000] {docker.py:429} INFO - at org.apache.spark.internal.Logging.initializeLogIfNecessary(Logging.scala:106)
+[2026-05-25T12:22:21.679+0000] {docker.py:429} INFO - at org.apache.spark.internal.Logging.initializeLogIfNecessary$(Logging.scala:105)
+	at org.apache.spark.SparkContext.initializeLogIfNecessary(SparkContext.scala:84)
+	at org.apache.spark.internal.Logging.log(Logging.scala:53)
+	at org.apache.spark.internal.Logging.log$(Logging.scala:51)
+	at org.apache.spark.SparkContext.log(SparkContext.scala:84)
+	at org.apache.spark.internal.Logging.logInfo(Logging.scala:61)
+	at org.apache.spark.internal.Logging.logInfo$(Logging.scala:60)
+	at org.apache.spark.SparkContext.logInfo(SparkContext.scala:84)
+	at org.apache.spark.SparkContext.<init>(SparkContext.scala:195)
+	at org.apache.spark.SparkContext$.getOrCreate(SparkContext.scala:2714)
+	at org.apache.spark.sql.SparkSession$Builder.$anonfun$getOrCreate$2(SparkSession.scala:953)
+	at scala.Option.getOrElse(Option.scala:189)
+	at org.apache.spark.sql.SparkSession$Builder.getOrCreate(SparkSession.scala:947)
+	at com.payroll.main.PayrollETL$.main(PayrollETL.scala:76)
+	at com.payroll.main.PayrollETL.main(PayrollETL.scala)
+[2026-05-25T12:22:24.001+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 502, in execute
+    return self._run_image()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 376, in _run_image
+    return self._run_image_with_mounts(self.mounts, add_tmp_variable=False)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/providers/docker/operators/docker.py", line 437, in _run_image_with_mounts
+    raise DockerContainerFailedException(f"Docker container failed: {result!r}", logs=log_lines)
+airflow.providers.docker.exceptions.DockerContainerFailedException: Docker container failed: {'StatusCode': 1}
+[2026-05-25T12:22:24.072+0000] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=payroll_etl_scala_pipeline, task_id=run_scala_etl, execution_date=20260524T000000, start_date=20260525T122204, end_date=20260525T122224
+[2026-05-25T12:22:24.384+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 28 for task run_scala_etl (Docker container failed: {'StatusCode': 1}; 196)
+[2026-05-25T12:22:24.435+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2026-05-25T12:22:24.537+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

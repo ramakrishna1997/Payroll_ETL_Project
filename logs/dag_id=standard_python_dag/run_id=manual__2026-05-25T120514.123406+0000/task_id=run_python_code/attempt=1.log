@@ -1,0 +1,15 @@
+[2026-05-25T12:05:48.334+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: standard_python_dag.run_python_code manual__2026-05-25T12:05:14.123406+00:00 [queued]>
+[2026-05-25T12:05:48.369+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: standard_python_dag.run_python_code manual__2026-05-25T12:05:14.123406+00:00 [queued]>
+[2026-05-25T12:05:48.370+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 2
+[2026-05-25T12:05:49.433+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): run_python_code> on 2026-05-25 12:05:14.123406+00:00
+[2026-05-25T12:05:49.471+0000] {standard_task_runner.py:60} INFO - Started process 109 to run task
+[2026-05-25T12:05:49.493+0000] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'standard_python_dag', 'run_python_code', 'manual__2026-05-25T12:05:14.123406+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/python_dag.py', '--cfg-path', '/tmp/tmpzyqb7d6g']
+[2026-05-25T12:05:49.505+0000] {standard_task_runner.py:88} INFO - Job 30: Subtask run_python_code
+[2026-05-25T12:05:49.868+0000] {task_command.py:423} INFO - Running <TaskInstance: standard_python_dag.run_python_code manual__2026-05-25T12:05:14.123406+00:00 [running]> on host b6d873eaa11f
+[2026-05-25T12:05:50.508+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data_engineering_team' AIRFLOW_CTX_DAG_ID='standard_python_dag' AIRFLOW_CTX_TASK_ID='run_python_code' AIRFLOW_CTX_EXECUTION_DATE='2026-05-25T12:05:14.123406+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-05-25T12:05:14.123406+00:00'
+[2026-05-25T12:05:50.510+0000] {logging_mixin.py:188} INFO - Starting the Python task...
+[2026-05-25T12:05:52.512+0000] {logging_mixin.py:188} INFO - Executing standard Python code inside Airflow!
+[2026-05-25T12:05:52.523+0000] {python.py:201} INFO - Done. Returned value was: Task completed successfully
+[2026-05-25T12:05:52.861+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=standard_python_dag, task_id=run_python_code, execution_date=20260525T120514, start_date=20260525T120548, end_date=20260525T120552
+[2026-05-25T12:05:53.221+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2026-05-25T12:05:53.455+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

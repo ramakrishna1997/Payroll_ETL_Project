@@ -1,0 +1,131 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\Ramakrishna\AppData\Local\Temp\idea.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\Ramakrishna\AppData\Local\Temp\idea.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.12.11 (Eclipse Adoptium Java 25.0.3)
+[debug]       Load.loadUnit: plugins took 243.4627ms
+[debug]       Load.loadUnit: defsScala took 0.9005ms
+[debug] [Loading] Scanning directory C:\Users\Ramakrishna\.sbt\1.0\plugins
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in C:\Users\Ramakrishna\.sbt\1.0\plugins, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 38.9778 ms
+[debug]           Load.resolveProject(global-plugins) took 69.3901ms
+[debug]         Load.loadTransitive: finalizeProject(Project(id global-plugins, base: C:\Users\Ramakrishna\.sbt\1.0\plugins, plugins: List(<none>))) took 149.8573ms
+[debug] [Loading] Done in C:\Users\Ramakrishna\.sbt\1.0\plugins, returning: (global-plugins)
+[debug]       Load.loadUnit: loadedProjectsRaw took 203.4834ms
+[debug]       Load.loadUnit: cleanEvalClasses took 0.4654ms
+[debug]     Load.loadUnit(file:/C:/Users/Ramakrishna/.sbt/1.0/plugins/, ...) took 478.8907ms
+[debug]   Load.apply: load took 840.3892ms
+[debug]   Load.apply: resolveProjects took 12.4418ms
+[debug]   Load.apply: finalTransforms took 120.592ms
+[debug]   Load.apply: config.delegates took 12.7988ms
+[debug]   Load.apply: Def.make(settings)... took 709.2656ms
+[debug]   Load.apply: structureIndex took 210.6553ms
+[debug]   Load.apply: mkStreams took 3.0776ms
+[info] loading global plugins from C:\Users\Ramakrishna\.sbt\1.0\plugins
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] Load.defaultLoad until apply took 12472.9392ms
+[debug]           Load.loadUnit: plugins took 40.7455ms
+[debug]           Load.loadUnit: defsScala took 0.0036ms
+[debug] [Loading] Scanning directory F:\Payroll_ETL_Pipeline\project
+[debug]             Load.loadUnit: mkEval took 6.6976ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in F:\Payroll_ETL_Pipeline\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 3.3038 ms
+[info] loading settings for project payroll_etl_pipeline-build from idea.sbt...
+[debug]               Load.resolveProject(payroll_etl_pipeline-build) took 17.5447ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id payroll_etl_pipeline-build, base: F:\Payroll_ETL_Pipeline\project, plugins: List(<none>))) took 22.4927ms
+[debug] [Loading] Done in F:\Payroll_ETL_Pipeline\project, returning: (payroll_etl_pipeline-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 5178.6856ms
+[debug]           Load.loadUnit: cleanEvalClasses took 15.4462ms
+[debug]         Load.loadUnit(file:/F:/Payroll_ETL_Pipeline/project/, ...) took 5236.0649ms
+[debug]       Load.apply: load took 5239.2902ms
+[debug]       Load.apply: resolveProjects took 0.3128ms
+[debug]       Load.apply: finalTransforms took 31.3531ms
+[debug]       Load.apply: config.delegates took 1.3563ms
+[debug]       Load.apply: Def.make(settings)... took 211.7487ms
+[debug]       Load.apply: structureIndex took 62.6688ms
+[debug]       Load.apply: mkStreams took 0.0035ms
+[info] loading project definition from F:\Payroll_ETL_Pipeline\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 6814.2802ms
+[debug]     Load.loadUnit: defsScala took 0.0127ms
+[debug] [Loading] Scanning directory F:\Payroll_ETL_Pipeline
+[debug]       Load.loadUnit: mkEval took 0.6043ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in F:\Payroll_ETL_Pipeline, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.GenerateAllManagedSourcesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.GenerateAllManagedSourcesPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,org.jetbrains.sbt.GenerateAllManagedSourcesPlugin,sbt.plugins.SemanticdbPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 3.7329 ms
+[info] loading settings for project payroll_etl_pipeline from build.sbt...
+[debug]         Load.resolveProject(payroll_etl_pipeline) took 44.7439ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id payroll_etl_pipeline, base: F:\Payroll_ETL_Pipeline, plugins: List(<none>))) took 49.5082ms
+[debug] [Loading] Done in F:\Payroll_ETL_Pipeline, returning: (payroll_etl_pipeline)
+[debug]     Load.loadUnit: loadedProjectsRaw took 2500.7334ms
+[debug]     Load.loadUnit: cleanEvalClasses took 38.8708ms
+[debug]   Load.loadUnit(file:/F:/Payroll_ETL_Pipeline/, ...) took 9355.1626ms
+[debug] Load.apply: load took 9357.8657ms
+[debug] Load.apply: resolveProjects took 0.1647ms
+[debug] Load.apply: finalTransforms took 46.0832ms
+[debug] Load.apply: config.delegates took 0.5247ms
+[debug] Load.apply: Def.make(settings)... took 215.0574ms
+[debug] Load.apply: structureIndex took 67.7548ms
+[debug] Load.apply: mkStreams took 0.0031ms
+[info] set current project to Payroll_ETL_Pipeline (in build file:/F:/Payroll_ETL_Pipeline/)
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(idea-shell, None, None)

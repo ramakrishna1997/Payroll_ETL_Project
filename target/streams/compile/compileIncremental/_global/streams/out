@@ -1,0 +1,6 @@
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] IncrementalCompile -----------[0m
+[0m[[0m[0mdebug[0m] [0m[0mIncrementalCompile.incrementalCompile[0m
+[0m[[0m[0mdebug[0m] [0m[0mprevious = Stamps for: 20 products, 10 sources, 4 libraries[0m
+[0m[[0m[0mdebug[0m] [0m[0mcurrent source = Set(${BASE}/src/main/scala/com/payroll/validation/Validation.scala, ${BASE}/src/main/scala/com/payroll/main/PayrollETL.scala, ${BASE}/src/main/scala/com/payroll/transformation/Transform.scala, ${BASE}/src/main/scala/com/payroll/Config/outputPath.scala, ${BASE}/src/main/scala/com/payroll/Config/Config.scala, ${BASE}/src/main/scala/com/payroll/ingestion/Ingest.scala, ${BASE}/src/main/scala/com/payroll/Config/rawPath.scala, ${BASE}/src/main/scala/com/payroll/analytics/Analytics.scala, ${BASE}/src/main/scala/com/payroll/Config/processedPath.scala, ${BASE}/src/main/scala/com/payroll/ingestion/package.scala)[0m
+[0m[[0m[0mdebug[0m] [0m[0m> initialChanges = InitialChanges(Changes(added = Set(), removed = Set(), changed = Set(), unmodified = ...),Set(),Set(),API Changes: Set())[0m
+[0m[[0m[0mdebug[0m] [0m[0mNo changes[0m

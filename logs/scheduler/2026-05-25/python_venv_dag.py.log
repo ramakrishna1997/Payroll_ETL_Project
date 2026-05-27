@@ -1,0 +1,109 @@
+[2026-05-25T09:49:40.818+0000] {processor.py:161} INFO - Started process (PID=888) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:49:40.821+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T09:49:40.825+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:49:40.824+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:49:40.936+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:49:42.053+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:49:42.050+0000] {override.py:1769} INFO - Created Permission View: can read on DAG:python_venv_uvicorn_dag
+[2026-05-25T09:49:42.331+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:49:42.330+0000] {override.py:1769} INFO - Created Permission View: can edit on DAG:python_venv_uvicorn_dag
+[2026-05-25T09:49:42.765+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:49:42.765+0000] {override.py:1769} INFO - Created Permission View: can delete on DAG:python_venv_uvicorn_dag
+[2026-05-25T09:49:42.767+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:49:42.767+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T09:49:42.862+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:49:42.861+0000] {dag.py:3058} INFO - Creating ORM DAG for python_venv_uvicorn_dag
+[2026-05-25T09:49:42.899+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:49:42.899+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T09:49:43.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 2.518 seconds
+[2026-05-25T09:51:10.355+0000] {processor.py:161} INFO - Started process (PID=943) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:51:10.358+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T09:51:10.361+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:51:10.360+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:51:10.425+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:51:10.485+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:51:10.485+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T09:51:10.562+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:51:10.562+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T09:51:10.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.352 seconds
+[2026-05-25T09:53:43.975+0000] {processor.py:161} INFO - Started process (PID=46) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:53:43.977+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T09:53:43.980+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:53:43.979+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:53:44.070+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:53:44.558+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:53:44.557+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T09:53:44.606+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:53:44.606+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T09:53:44.736+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.770 seconds
+[2026-05-25T09:56:01.584+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:56:01.588+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T09:56:01.603+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:56:01.593+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:56:01.690+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:56:01.837+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:56:01.836+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T09:56:02.114+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:56:02.104+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T09:56:03.081+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 1.515 seconds
+[2026-05-25T09:58:44.622+0000] {processor.py:161} INFO - Started process (PID=170) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:58:44.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T09:58:44.626+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:58:44.625+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:58:44.662+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T09:58:44.701+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:58:44.700+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T09:58:44.750+0000] {logging_mixin.py:188} INFO - [2026-05-25T09:58:44.750+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T09:58:44.855+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.238 seconds
+[2026-05-25T10:00:21.242+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:00:21.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:00:21.248+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:00:21.247+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:00:21.307+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:00:21.644+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:00:21.644+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:00:21.766+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:00:21.766+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:00:22.027+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.798 seconds
+[2026-05-25T10:01:18.627+0000] {processor.py:161} INFO - Started process (PID=257) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:01:18.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:01:18.646+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:01:18.644+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:01:18.753+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:01:19.610+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:01:19.609+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:01:22.435+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:01:22.434+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:01:23.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 5.114 seconds
+[2026-05-25T10:02:16.639+0000] {processor.py:161} INFO - Started process (PID=289) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:02:16.641+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:02:16.642+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:02:16.642+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:02:16.676+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:02:16.712+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:02:16.712+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:02:16.749+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:02:16.749+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:02:17.164+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.531 seconds
+[2026-05-25T10:03:21.576+0000] {processor.py:161} INFO - Started process (PID=324) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:03:21.578+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:03:21.581+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:03:21.580+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:03:21.638+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:03:21.710+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:03:21.708+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:03:21.841+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:03:21.840+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:03:22.100+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.530 seconds
+[2026-05-25T10:04:45.859+0000] {processor.py:161} INFO - Started process (PID=369) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:04:45.861+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:04:45.862+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:04:45.862+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:04:45.904+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:04:45.942+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:04:45.942+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:04:45.985+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:04:45.984+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:04:46.097+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.244 seconds
+[2026-05-25T10:06:42.282+0000] {processor.py:161} INFO - Started process (PID=426) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:06:42.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:06:42.288+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:06:42.287+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:06:42.367+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:06:42.456+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:06:42.456+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:06:42.538+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:06:42.538+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:06:42.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.437 seconds
+[2026-05-25T10:07:35.799+0000] {processor.py:161} INFO - Started process (PID=461) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:07:35.805+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:07:35.807+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:07:35.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:07:35.862+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:07:35.944+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:07:35.943+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:07:36.101+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:07:36.100+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:07:36.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.519 seconds
+[2026-05-25T10:08:41.245+0000] {processor.py:161} INFO - Started process (PID=493) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:08:41.248+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:08:41.252+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:08:41.251+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:08:41.324+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:08:41.397+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:08:41.396+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:08:41.485+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:08:41.485+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:08:41.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.501 seconds
+[2026-05-25T10:09:45.985+0000] {processor.py:161} INFO - Started process (PID=530) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:09:45.989+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:09:45.992+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:09:45.991+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:09:46.097+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:09:46.294+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:09:46.293+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:09:46.404+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:09:46.403+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:09:46.637+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.666 seconds
+[2026-05-25T10:10:45.468+0000] {processor.py:161} INFO - Started process (PID=563) to work on /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:10:45.470+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/python_venv_dag.py for tasks to queue
+[2026-05-25T10:10:45.472+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:10:45.471+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:10:45.514+0000] {processor.py:840} INFO - DAG(s) 'python_venv_uvicorn_dag' retrieved from /opt/airflow/dags/python_venv_dag.py
+[2026-05-25T10:10:45.561+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:10:45.561+0000] {dag.py:3036} INFO - Sync 1 DAGs
+[2026-05-25T10:10:45.610+0000] {logging_mixin.py:188} INFO - [2026-05-25T10:10:45.610+0000] {dag.py:3823} INFO - Setting next_dagrun for python_venv_uvicorn_dag to 2026-05-24 00:00:00+00:00, run_after=2026-05-25 00:00:00+00:00
+[2026-05-25T10:10:45.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/python_venv_dag.py took 0.285 seconds

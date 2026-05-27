@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline.iml" filepath="$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline/Payroll_ETL_Pipeline.Payroll_ETL_Pipeline-build.iml" filepath="$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline/Payroll_ETL_Pipeline.Payroll_ETL_Pipeline-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline/Payroll_ETL_Pipeline.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline/Payroll_ETL_Pipeline.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline/Payroll_ETL_Pipeline.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Payroll_ETL_Pipeline/Payroll_ETL_Pipeline.test.iml" />
+    </modules>
+  </component>
+</project>

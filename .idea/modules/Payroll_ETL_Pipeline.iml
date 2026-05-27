@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id="payroll_etl_pipeline [file:///F:/Payroll_ETL_Pipeline/]" external.linked.project.path="F:\Payroll_ETL_Pipeline" external.root.project.path="$MODULE_DIR$/../.." external.system.id="SBT" type="JAVA_MODULE" version="4">
+  <component name="DisplayModuleName">
+    <option name="name" value="Payroll_ETL_Pipeline" />
+  </component>
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_25" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../..">
+      <excludeFolder url="file://$MODULE_DIR$/../../target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Payroll_ETL_Pipeline.main" />
+    <orderEntry type="module" module-name="Payroll_ETL_Pipeline.test" production-on-test="" />
+  </component>
+</module>
