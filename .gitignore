@@ -1,0 +1,24 @@
+# Build artifacts / compiled JARs
+out/
+target/
+*.jar
+*.class
+
+# Large data files
+src/main/Data/Input/payroll.csv
+
+# SBT
+.bsp/
+project/target/
+project/project/
+
+# IDE
+.idea/
+*.iml
+
+# Logs
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
